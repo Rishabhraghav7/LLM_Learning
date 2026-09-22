@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Application Flow.md",
+                "file": "7. Environment and configuration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. Application Flow"
+              "title": "7. Environment and configuration"
             }
           }
         ]
@@ -190,12 +190,12 @@
   },
   "active": "2e7471afcafbbb4c",
   "lastOpenFiles": [
-    "5. LLM integration.md",
     "6. Query generation and validation.md",
+    "5. LLM integration.md",
+    "4. Application Flow.md",
     "7. Environment and configuration.md",
     "8. Error handling and Limitations.md",
     "9. Future Enhancements.md",
-    "4. Application Flow.md",
     "2.Modules.md",
     "1.Objective.md",
     "3.Data base.md",
