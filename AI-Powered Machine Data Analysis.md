@@ -351,7 +351,7 @@ live_data:
 ```
 
 ## 4. Application Flow
-#### 4.1 Active chatbot flow
+#### 4.1 Architecture level flow
 
 ```text
 User
@@ -374,7 +374,7 @@ Response
 ```
 
 
-#### 4.1 Main Application Flow
+#### 4.2 Code Level Flow
 
 ```text
 User
