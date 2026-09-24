@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4. Application Flow.md",
+                "file": "AI-Powered Machine Data Analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. Application Flow"
+              "title": "AI-Powered Machine Data Analysis"
             }
           }
         ],
@@ -219,8 +219,8 @@
   },
   "active": "059d4e8b6cd90012",
   "lastOpenFiles": [
-    "AI-Powered Machine Data Analysis.md",
     "4. Application Flow.md",
+    "AI-Powered Machine Data Analysis.md",
     "3.Data base.md",
     "7. Environment and configuration.md",
     "9. Future Enhancements.md",

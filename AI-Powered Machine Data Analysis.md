@@ -428,38 +428,33 @@ mongoQueryValidator.validateQuery()
 
 ```mermaid
 flowchart TD
+    A["User NL Query"] --> B["Response Cache"]
 
-A["User NL Query"] --> B["LLM Cache"]
+    B -->|CACHE HIT| Z["Final Text Response"]
+    B -->|CACHE MISS| C["Prompt Builder"]
 
-B -->|CACHE HIT| Z["Cached Response"]
+    P["Static Prompt / System Instructions"] --> PC["LLM Prompt Cache"]
+    PC --> C
 
-B -->|CACHE MISS| C["Primary LLM"]
+    C --> D["Primary LLM"]
+    D --> E["Structured Query"]
+    E --> F["Validator"]
 
-C --> D["Structured Query"]
+    F -->|VALID| G["Execute Query in MongoDB"]
+    F -->|ERROR| H["Regenerate Query"]
+    H --> D
 
-D --> E["Validator"]
+    G --> I["MongoDB Query Result"]
+    I --> J["Result Summarization"]
 
-E -->|VALID| F["Execute Query<br/>in MongoDB"]
+    J --> D2["Primary LLM"]
+    PC --> D2
+    D2 --> Z
 
-E -->|ERROR| G["Regenerate Query"]
+    D -->|LLM Unavailable| K["Fallback LLM"]
+    K --> E
 
-G --> C
-
-F --> H["MongoDB Query Result"]
-
-H --> I["LLM Cache"]
-
-I -->|CACHE HIT| Z
-
-I -->|CACHE MISS| J["Primary LLM<br/>Result Summarization"]
-
-C -->|LLM Unavailable| K["Fallback LLM"]
-
-K --> D
-
-J --> Z["Final Text Response"]
-
-Z --> L["User"]
+    Z --> L["User"]
 ```
 
 
@@ -844,6 +839,7 @@ Potential caching points include:
 1. Natural-language query → generated MongoDB query
 2. Query result + user question → final summary
 Caching could reduce repeated LLM calls for identical or equivalent requests.
+
 
 #### 9.4 Fallback LLM Provider
 Extend the fallback mechanism beyond Gemini models to support an alternative  
