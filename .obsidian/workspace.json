@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI-Powered Machine Data Analysis.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI-Powered Machine Data Analysis"
+              "title": "README"
             }
           },
           {
@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI-Powered Machine Data Analysis.md",
+                "file": "4. Application Flow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI-Powered Machine Data Analysis"
+              "title": "4. Application Flow"
             }
           }
         ],
@@ -219,14 +219,15 @@
   },
   "active": "ce373ee091e29c6a",
   "lastOpenFiles": [
-    "8. Error handling and Limitations.md",
-    "4. Application Flow.md",
-    "AI-Powered Machine Data Analysis.md",
-    "3.Data base.md",
-    "7. Environment and configuration.md",
     "9. Future Enhancements.md",
-    "6. Query generation and validation.md",
+    "README.md",
+    "4. Application Flow.md",
     "5. LLM integration.md",
+    "3.Data base.md",
+    "8. Error handling and Limitations.md",
+    "AI-Powered Machine Data Analysis.md",
+    "7. Environment and configuration.md",
+    "6. Query generation and validation.md",
     "2.Modules.md",
     "1.Objective.md",
     "function_calling_from_llm.md"

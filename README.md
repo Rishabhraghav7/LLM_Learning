@@ -816,6 +816,8 @@ function.
 The LLM could request the application to execute the validation function,
 after which the application would return the validation result to the LLM.
 
+>NOTE: This feature will be used on performance basis
+
 ```text
 LLM
  ↓
@@ -832,7 +834,7 @@ Validation Result
 LLM
 ```
 
-
+[call_own_functions](https://aistudio.google.com/docs/get-started#9-call-your-own-functions)
 #### 9.3 LLM Response Caching
 Introduce caching for repeated LLM requests.
 Potential caching points include:
@@ -840,6 +842,7 @@ Potential caching points include:
 2. Query result + user question → final summary
 Caching could reduce repeated LLM calls for identical or equivalent requests.
 [context_caching](https://ai.google.dev/gemini-api/docs/generate-content/caching)
+[caching_supported_models](https://ai.google.dev/gemini-api/docs/pricing)
 
 
 #### 9.4 Fallback LLM Provider
@@ -860,3 +863,7 @@ Potential future capabilities include:
 These capabilities would require additional data, analysis logic, and  
 validation beyond the current prototype scope.
 
+
+#### 9.6 Using Token buckets 
+Token buckets are used to restrict the user from initiating multiple requests and longer requests. They have a specific size of N and allows tokens to be accumulated till that value. This also reduces the API calls made to the LLM and returning a status of 429.
+[redis_token_bucket](https://redis.io/docs/latest/develop/use-cases/rate-limiter/redis-py/)
