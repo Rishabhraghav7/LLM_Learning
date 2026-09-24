@@ -839,6 +839,7 @@ Potential caching points include:
 1. Natural-language query → generated MongoDB query
 2. Query result + user question → final summary
 Caching could reduce repeated LLM calls for identical or equivalent requests.
+[context_caching](https://ai.google.dev/gemini-api/docs/generate-content/caching)
 
 
 #### 9.4 Fallback LLM Provider
