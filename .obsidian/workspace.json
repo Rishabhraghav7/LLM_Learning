@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -217,10 +217,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "059d4e8b6cd90012",
+  "active": "ce373ee091e29c6a",
   "lastOpenFiles": [
-    "4. Application Flow.md",
     "AI-Powered Machine Data Analysis.md",
+    "4. Application Flow.md",
     "3.Data base.md",
     "7. Environment and configuration.md",
     "9. Future Enhancements.md",

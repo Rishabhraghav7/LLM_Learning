@@ -17,8 +17,8 @@
     3.2 Schema Metadata
     
 4. **Application Flow**  
-    4.1 Active Chatbot Flow  
-    4.2 Main Application Flow  
+    4.1 Architecture level flow
+    4.2 Code Level Flow
     4.3 Proposed Architecture  
     4.4 Implemented Architecture
     
@@ -423,7 +423,7 @@ mongoQueryValidator.validateQuery()
 ```
 
 
-#### 4.2 Proposed architecture 
+#### 4.3 Proposed architecture 
 
 
 ```mermaid
@@ -458,7 +458,7 @@ flowchart TD
 ```
 
 
-#### 4.3 Implemented architecture 
+#### 4.4 Implemented architecture 
 
 ```mermaid 
 flowchart TD
